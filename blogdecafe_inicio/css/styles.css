@@ -171,3 +171,37 @@ font-weight: normal;
     padding-bottom: 3rem;
     margin-top: 4rem;
 }
+@media (min-width: 768px) {
+   .sobre-nosotros{
+       display:grid;
+       grid-template-columns: repeat(2, 1fr);
+       column-gap: 2rem;
+   }
+}
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+@media (min-width: 768px) {
+   .curso{
+       display: grid;
+       grid-template-columns: auto;
+       column-gap: 2rem;
+   }
+}
+.curso:last-of-type{
+    border:none;
+}
+.curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+    }
+    .curso__info{
+    font-weight: normal;
+    }
+    .curso__label,.curso__info{
+        font-size: 2rem;
+    }
+    .curso__imagen{
+        width: 50%;
+    }
